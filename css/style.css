@@ -390,6 +390,18 @@ body {
     .button--gray:hover {
       background-color: #c7c6c6; }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
