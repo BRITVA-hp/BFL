@@ -15,8 +15,8 @@
 
             <div class="row">
                 <p class="header__logo">Банкротство <br> <span>физических лиц</span></p>
-                <a href="tel:80000000000" class="button header__button">Бесплатная консультация</a>
-                <a href="tel:80000000000" class="header__tel"><img src="img/tel.png" alt="phone"></a>
+                <div data-modal class="button header__button">Бесплатная консультация</div>
+                <div data-modal class="header__tel"><img src="img/tel.png" alt="phone"></div>
             </div>
 
         </div>
@@ -398,16 +398,59 @@
     </footer>
     <!-- /.footer section -->
 
-    <div class="modal">
+    <div class="modal modal-call">
 
-        <div class="modal__dialog">
+        <form action="#" class="modal-call__dialog">
 
-            <img src="img/close.png" alt="close" class="modal__close">
+            <img src="img/close.png" alt="close" class="modal-call__close">
 
-            <img src="img/msg.png" alt="message" class="modal__img">
-            <p class="modal__title">Спасибо за ответы</p>
-            <p class="modal__text">Ваши ответы приняты в обработку.</p>
-            <p class="modal__text">В ближайшие 10 минут с Вами свяжется юрист.</p>
+            <div class="modal-call__wrap">
+                <p class="modal-call__label">Банкротство <br> <span>физических лиц</span></p>
+                <p class="modal-call__title">Обратный звонок</p>
+
+                <input placeholder="Имя" type="text" class="modal-call__input">
+                <input placeholder="+7 (___) ___ - __ - __" type="tel" class="modal-call__input modal-call__input--last">
+
+                <button class="button modal-call__button">Отправить</button>
+
+            </div>
+
+        </form>
+
+    </div>
+    <!-- /.modal -->
+
+    <div class="modal modal-success">
+
+        <div class="modal-success__dialog">
+
+            <img src="img/close.png" alt="close" class="modal-success__close">
+
+            <div class="modal-success__wrap">
+
+                <img src="img/ok.png" alt="ok" class="modal-success__img">
+
+                <p class="modal-success__title">Заявка <br> отправлена</p>
+                <p class="modal-success__text">Мы получили вашу заявку.</p>
+                <p class="modal-success__text modal-success__text--last">Наш менеджер свяжится с вами.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.modal modal-success -->
+
+    <div class="modal modal-end">
+
+        <div class="modal-end__dialog">
+
+            <img src="img/close.png" alt="close" class="modal-end__close">
+
+            <img src="img/msg.png" alt="message" class="modal-end__img">
+            <p class="modal-end__title">Спасибо за ответы</p>
+            <p class="modal-end__text">Ваши ответы приняты в обработку.</p>
+            <p class="modal-end__text">В ближайшие 10 минут с Вами свяжется юрист.</p>
         </div>
 
     </div>

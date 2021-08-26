@@ -13,41 +13,144 @@
     align-items: center
     justify-content: center
     transition: 0.5s
+    background-color: rgba(0, 0, 0, 0.7)
     &--visible
         opacity: 1
         visibility: visible
         animation-name: fadeIn
         animation-duration: 0.5s
-    &__dialog
-        padding: 100px 140px
-        background-color: #0065B1
-        box-shadow: 0px 48px 50px -40px rgba(45, 31, 97, 0.5)
-        border-radius: 30px
+    &-success
+        background-color: transparent
         color: #fff
-        display: flex
-        flex-direction: column
-        align-items: center
         text-align: center
-        position: relative
-    &__close
-        position: absolute
-        cursor: pointer
-        top: 30px
-        right: 30px
-    &__img
-        margin-bottom: 34px
-    &__title
-        font-family: 'Ekibastuz-Bold'
-        font-style: normal
-        font-size: 36px
-        line-height: 100%
-        margin-bottom: 70px
-    &__text
-        font-family: 'Ekibastuz'
-        font-style: normal
-        font-size: 24px
-        line-height: 100%
-        max-width: 350px
-        margin-bottom: 30px
-        &:last-of-type
-            margin-bottom: 0
+        &__close
+            position: absolute
+            right: 30px
+            top: 30px
+            cursor: pointer
+        &__dialog
+            background-color: #0065B1
+            box-shadow: 0px 48px 50px -40px rgba(45, 31, 97, 0.5)
+            border-radius: 30px
+            padding: 13px
+            position: relative
+        &__wrap
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 140px 105px 100px
+            border: 1px solid #FFFFFF
+            border-radius: 30px
+        &__img
+            margin-bottom: 54px
+        &__title
+            margin-bottom: 40px
+            font-family: 'Ekibastuz-Bold'
+            font-style: normal
+            font-size: 36px
+            line-height: 100%
+        &__text
+            margin-bottom: 20px
+            font-family: 'Ekibastuz'
+            font-style: normal
+            font-size: 24px
+            line-height: 100%
+            max-width: 350px
+            &--last
+                margin-bottom: 0
+    &-call
+        &__close
+            position: absolute
+            right: 30px
+            top: 30px
+            cursor: pointer
+        &__dialog
+            width: 506px
+            background: #0065B1
+            border-radius: 16px
+            padding: 11px
+            position: relative
+        &__wrap
+            border: 1px solid #FFFFFF
+            border-radius: 16px
+            display: flex
+            flex-direction: column
+            padding: 36px 54px 90px
+        &__label
+            font-family: 'Ekibastuz-900'
+            font-style: normal
+            font-size: 28px
+            line-height: 120%
+            color: #FFFFFF
+            margin-bottom: 34px
+            span
+                color: #EE3F58
+        &__input
+            background-color: #FFFFFF
+            border: 1px solid #E2E2E2
+            border-radius: 6px
+            padding: 25px 30px
+            width: 100%
+            margin-bottom: 18px
+            font-family: 'Ekibastuz-Bold'
+            font-style: normal
+            font-size: 16px
+            line-height: 120%
+            color: #878787
+            &--last
+                margin-bottom: 35px
+            &:focus
+                outline: none
+        &__button
+            font-family: 'Gilroy-Bold'
+            font-style: normal
+            font-size: 18px
+            line-height: 22px
+            color: #0065B1
+            background-color: #fff
+            width: 100%
+            padding: 20px 0
+            &:hover
+                background-color: #bdbcbc
+        &__title
+            font-family: 'Ekibastuz-Bold'
+            font-style: normal
+            font-size: 46px
+            line-height: 100%
+            color: #FFFFFF
+            margin-bottom: 50px
+    &-end
+        background-color: transparent
+        &__dialog
+            padding: 100px 140px
+            background-color: #0065B1
+            box-shadow: 0px 48px 50px -40px rgba(45, 31, 97, 0.5)
+            border-radius: 30px
+            color: #fff
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+            position: relative
+        &__close
+            position: absolute
+            cursor: pointer
+            top: 30px
+            right: 30px
+        &__img
+            margin-bottom: 34px
+        &__title
+            font-family: 'Ekibastuz-Bold'
+            font-style: normal
+            font-size: 36px
+            line-height: 100%
+            margin-bottom: 70px
+        &__text
+            font-family: 'Ekibastuz'
+            font-style: normal
+            font-size: 24px
+            line-height: 100%
+            max-width: 350px
+            margin-bottom: 30px
+            &:last-of-type
+                margin-bottom: 0

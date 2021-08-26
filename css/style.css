@@ -643,7 +643,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.5s; }
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.7); }
   .modal--visible {
     opacity: 1;
     visibility: visible;
@@ -651,39 +652,140 @@ body {
     animation-name: fadeIn;
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s; }
-  .modal__dialog {
-    padding: 100px 140px;
-    background-color: #0065B1;
-    box-shadow: 0px 48px 50px -40px rgba(45, 31, 97, 0.5);
-    border-radius: 30px;
+  .modal-success {
+    background-color: transparent;
     color: #fff;
+    text-align: center; }
+    .modal-success__close {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      cursor: pointer; }
+    .modal-success__dialog {
+      background-color: #0065B1;
+      box-shadow: 0px 48px 50px -40px rgba(45, 31, 97, 0.5);
+      border-radius: 30px;
+      padding: 13px;
+      position: relative; }
+    .modal-success__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 140px 105px 100px;
+      border: 1px solid #FFFFFF;
+      border-radius: 30px; }
+    .modal-success__img {
+      margin-bottom: 54px; }
+    .modal-success__title {
+      margin-bottom: 40px;
+      font-family: 'Ekibastuz-Bold';
+      font-style: normal;
+      font-size: 36px;
+      line-height: 100%; }
+    .modal-success__text {
+      margin-bottom: 20px;
+      font-family: 'Ekibastuz';
+      font-style: normal;
+      font-size: 24px;
+      line-height: 100%;
+      max-width: 350px; }
+      .modal-success__text--last {
+        margin-bottom: 0; }
+  .modal-call__close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer; }
+  .modal-call__dialog {
+    width: 506px;
+    background: #0065B1;
+    border-radius: 16px;
+    padding: 11px;
+    position: relative; }
+  .modal-call__wrap {
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    position: relative; }
-  .modal__close {
-    position: absolute;
-    cursor: pointer;
-    top: 30px;
-    right: 30px; }
-  .modal__img {
+    padding: 36px 54px 90px; }
+  .modal-call__label {
+    font-family: 'Ekibastuz-900';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 120%;
+    color: #FFFFFF;
     margin-bottom: 34px; }
-  .modal__title {
+    .modal-call__label span {
+      color: #EE3F58; }
+  .modal-call__input {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 6px;
+    padding: 25px 30px;
+    width: 100%;
+    margin-bottom: 18px;
     font-family: 'Ekibastuz-Bold';
     font-style: normal;
-    font-size: 36px;
-    line-height: 100%;
-    margin-bottom: 70px; }
-  .modal__text {
-    font-family: 'Ekibastuz';
+    font-size: 16px;
+    line-height: 120%;
+    color: #878787; }
+    .modal-call__input--last {
+      margin-bottom: 35px; }
+    .modal-call__input:focus {
+      outline: none; }
+  .modal-call__button {
+    font-family: 'Gilroy-Bold';
     font-style: normal;
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0065B1;
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 0; }
+    .modal-call__button:hover {
+      background-color: #bdbcbc; }
+  .modal-call__title {
+    font-family: 'Ekibastuz-Bold';
+    font-style: normal;
+    font-size: 46px;
     line-height: 100%;
-    max-width: 350px;
-    margin-bottom: 30px; }
-    .modal__text:last-of-type {
-      margin-bottom: 0; }
+    color: #FFFFFF;
+    margin-bottom: 50px; }
+  .modal-end {
+    background-color: transparent; }
+    .modal-end__dialog {
+      padding: 100px 140px;
+      background-color: #0065B1;
+      box-shadow: 0px 48px 50px -40px rgba(45, 31, 97, 0.5);
+      border-radius: 30px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative; }
+    .modal-end__close {
+      position: absolute;
+      cursor: pointer;
+      top: 30px;
+      right: 30px; }
+    .modal-end__img {
+      margin-bottom: 34px; }
+    .modal-end__title {
+      font-family: 'Ekibastuz-Bold';
+      font-style: normal;
+      font-size: 36px;
+      line-height: 100%;
+      margin-bottom: 70px; }
+    .modal-end__text {
+      font-family: 'Ekibastuz';
+      font-style: normal;
+      font-size: 24px;
+      line-height: 100%;
+      max-width: 350px;
+      margin-bottom: 30px; }
+      .modal-end__text:last-of-type {
+        margin-bottom: 0; }
 
 @media screen and (max-width: 1500px) {
   .main__card {
@@ -718,15 +820,44 @@ body {
     max-width: 302px; } }
 
 @media screen and (max-width: 992px) {
-  .modal__dialog {
+  .modal-success__dialog {
+    border-radius: 16px;
+    padding: 6px; }
+  .modal-success__wrap {
+    padding: 90px 50px;
+    border-radius: 16px; }
+  .modal-success__title {
+    font-size: 30px;
+    margin-bottom: 30px; }
+  .modal-success__text {
+    font-size: 18px;
+    margin-bottom: 10px; }
+  .modal-success__img {
+    margin-bottom: 20px; }
+  .modal-call__dialog {
+    padding: 6px;
+    width: auto;
+    max-width: 400px; }
+  .modal-call__title {
+    font-size: 35px;
+    margin-bottom: 32px; }
+  .modal-call__input {
+    padding: 20px 30px; }
+  .modal-call__label {
+    font-size: 20px;
+    line-height: 105%;
+    margin-bottom: 35px; }
+  .modal-call__wrap {
+    padding: 25px 20px 40px; }
+  .modal-end__dialog {
     padding: 50px 20px 100px;
     border-radius: 16px; }
-  .modal__img {
+  .modal-end__img {
     width: 100px; }
-  .modal__title {
+  .modal-end__title {
     font-size: 30px;
     margin-bottom: 46px; }
-  .modal__text {
+  .modal-end__text {
     font-size: 18px;
     margin-bottom: 20px; }
   .last {
@@ -862,7 +993,7 @@ body {
     .second__wrap {
       margin-bottom: 40px; } }
 
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 700px) {
   .modal {
     overflow: auto;
     align-items: flex-start;

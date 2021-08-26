@@ -37,17 +37,49 @@
 
 @media screen and ( max-width: 992px )
     .modal
-        &__dialog
-            padding: 50px 20px 100px
-            border-radius: 16px
-        &__img
-            width: 100px
-        &__title
-            font-size: 30px
-            margin-bottom: 46px
-        &__text
-            font-size: 18px
-            margin-bottom: 20px
+        &-success
+            &__dialog
+                border-radius: 16px
+                padding: 6px
+            &__wrap
+                padding: 90px 50px
+                border-radius: 16px
+            &__title
+                font-size: 30px
+                margin-bottom: 30px
+            &__text
+                font-size: 18px
+                margin-bottom: 10px
+            &__img
+                margin-bottom: 20px
+        &-call
+            &__dialog
+                padding: 6px
+                width: auto
+                max-width: 400px
+            &__title
+                font-size: 35px
+                margin-bottom: 32px
+            &__input
+                padding: 20px 30px
+            &__label
+                font-size: 20px
+                line-height: 105%
+                margin-bottom: 35px
+            &__wrap
+                padding: 25px 20px 40px
+        &-end
+            &__dialog
+                padding: 50px 20px 100px
+                border-radius: 16px
+            &__img
+                width: 100px
+            &__title
+                font-size: 30px
+                margin-bottom: 46px
+            &__text
+                font-size: 18px
+                margin-bottom: 20px
 
     .last
         padding-top: 30px
@@ -194,7 +226,7 @@
         &__wrap
             margin-bottom: 40px
 
-@media screen and ( max-height: 650px )
+@media screen and ( max-height: 700px )
     .modal
         overflow: auto
         align-items: flex-start
